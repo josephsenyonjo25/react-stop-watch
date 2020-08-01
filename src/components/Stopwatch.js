@@ -34,12 +34,12 @@ class Stopwatch extends Component {
             <div className= "Stopwatch">
                 
                 <p id = "clock">
-                  0
+                  {this.state.counter}
                 </p>
                 <div> 
-                    <button>Reset</button>
-                    <button>Start</button>
-                    <button>Pause</button>
+                    <button onClick = {this.handleReset}>Reset</button>
+                    <button onClick = {this.handleStart}>Start</button>
+                    <button onClick = {this.handlePause}>Pause</button>
                 </div>
             </div>
           )
