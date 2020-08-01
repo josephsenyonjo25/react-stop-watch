@@ -17,7 +17,8 @@ class Stopwatch extends Component {
       }
 
     handleReset() {
-        
+      this.setState({counter:0, started:false});
+      clearInterval(this.timer);  
     }
 
     handleStart() {
