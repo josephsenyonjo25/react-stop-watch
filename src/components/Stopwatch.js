@@ -35,9 +35,7 @@ class Stopwatch extends Component {
             clearInterval(this.timer);
         }
         else{
-            this.timer = setInterval(()=>{
-            this.setState({counter:this.state.counter+1, started:true});
-            }, 1000); 
+            this.handleStart();
         }
     }
 
