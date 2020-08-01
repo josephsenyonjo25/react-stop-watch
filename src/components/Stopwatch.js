@@ -10,7 +10,7 @@ class Stopwatch extends Component {
                 <p id = "clock">
                   
                 </p>
-                <div>
+                <div> 
                     <button>Reset</button>
                     <button>Start</button>
                     <button>Pause</button>
