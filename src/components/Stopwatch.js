@@ -30,7 +30,10 @@ class Stopwatch extends Component {
     }
 
     handlePause() {
-        
+        if(this.state.started){
+            this.setState({started:false});
+            clearInterval(this.timer);
+        }
     }
 
         render() {
