@@ -21,7 +21,11 @@ class Stopwatch extends Component {
     }
 
     handleStart() {
-        
+       if(!this.state.started) {
+           this.timer = setInterval(()=>{
+               this.setState({counter:this.state.counter+1, started:true});
+           }, 1000);
+       }
     }
 
     handlePause() {
